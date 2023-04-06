@@ -1,0 +1,260 @@
+DEBUG:root:fourCheck tableCards list: ['SA', 'DJ', 'S7', 'SK', 'H9', 'C6', 'C5']
+DEBUG:root:flushDeck tableCards: ['SA', 'DJ', 'S7', 'SK', 'H9', 'C6', 'C5']
+DEBUG:root:This probably isn't a flush
+DEBUG:root:2
+DEBUG:root:1
+DEBUG:root:[['Club', 'Club'], ['Diamond'], ['Spade', 'Spade', 'Spade'], ['Heart']]
+DEBUG:root:houseCheck tableCards:  ['SA', 'DJ', 'S7', 'SK', 'H9', 'C6', 'C5']
+DEBUG:root:threeCheck tablecards: ['A', 'J', '7', 'K', '9', '6', '5']
+DEBUG:root:pairCheck tableCards: ['SA', 'DJ', 'S7', 'SK', 'H9', 'C6', 'C5']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: A and the tableCards[x] value is: SA
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: J and the tableCards[x] value is: DJ
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: 7 and the tableCards[x] value is: S7
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: K and the tableCards[x] value is: SK
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 6 and the tableCards[x] value is: C6
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 5 and the tableCards[x] value is: C5
+DEBUG:root:the pairCount is: 0
+DEBUG:root:pairCheck tableCards: ['SA', 'DJ', 'S7', 'SK', 'H9', 'C6', 'C5']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: A and the tableCards[x] value is: SA
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: J and the tableCards[x] value is: DJ
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: 7 and the tableCards[x] value is: S7
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: K and the tableCards[x] value is: SK
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 6 and the tableCards[x] value is: C6
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 5 and the tableCards[x] value is: C5
+DEBUG:root:the pairCount is: 0
+DEBUG:root:fourCheck tableCards list: ['SA', 'DJ', 'S7', 'SK', 'H9', 'D4', 'H2']
+DEBUG:root:flushDeck tableCards: ['SA', 'DJ', 'S7', 'SK', 'H9', 'D4', 'H2']
+DEBUG:root:This probably isn't a flush
+DEBUG:root:0
+DEBUG:root:2
+DEBUG:root:[[], ['Diamond', 'Diamond'], ['Spade', 'Spade', 'Spade'], ['Heart', 'Heart']]
+DEBUG:root:houseCheck tableCards:  ['SA', 'DJ', 'S7', 'SK', 'H9', 'D4', 'H2']
+DEBUG:root:threeCheck tablecards: ['A', 'J', '7', 'K', '9', '4', '2']
+DEBUG:root:pairCheck tableCards: ['SA', 'DJ', 'S7', 'SK', 'H9', 'D4', 'H2']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: A and the tableCards[x] value is: SA
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: J and the tableCards[x] value is: DJ
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: 7 and the tableCards[x] value is: S7
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: K and the tableCards[x] value is: SK
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 4 and the tableCards[x] value is: D4
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 2 and the tableCards[x] value is: H2
+DEBUG:root:the pairCount is: 0
+DEBUG:root:pairCheck tableCards: ['SA', 'DJ', 'S7', 'SK', 'H9', 'D4', 'H2']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: A and the tableCards[x] value is: SA
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: J and the tableCards[x] value is: DJ
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: 7 and the tableCards[x] value is: S7
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: K and the tableCards[x] value is: SK
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 4 and the tableCards[x] value is: D4
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 2 and the tableCards[x] value is: H2
+DEBUG:root:the pairCount is: 0
+DEBUG:root:fourCheck tableCards list: ['SA', 'DJ', 'S7', 'SK', 'H9', 'D6', 'D2']
+DEBUG:root:flushDeck tableCards: ['SA', 'DJ', 'S7', 'SK', 'H9', 'D6', 'D2']
+DEBUG:root:This probably isn't a flush
+DEBUG:root:0
+DEBUG:root:3
+DEBUG:root:[[], ['Diamond', 'Diamond', 'Diamond'], ['Spade', 'Spade', 'Spade'], ['Heart']]
+DEBUG:root:houseCheck tableCards:  ['SA', 'DJ', 'S7', 'SK', 'H9', 'D6', 'D2']
+DEBUG:root:threeCheck tablecards: ['A', 'J', '7', 'K', '9', '6', '2']
+DEBUG:root:pairCheck tableCards: ['SA', 'DJ', 'S7', 'SK', 'H9', 'D6', 'D2']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: A and the tableCards[x] value is: SA
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: J and the tableCards[x] value is: DJ
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: 7 and the tableCards[x] value is: S7
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: K and the tableCards[x] value is: SK
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 6 and the tableCards[x] value is: D6
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 2 and the tableCards[x] value is: D2
+DEBUG:root:the pairCount is: 0
+DEBUG:root:pairCheck tableCards: ['SA', 'DJ', 'S7', 'SK', 'H9', 'D6', 'D2']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: A and the tableCards[x] value is: SA
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: J and the tableCards[x] value is: DJ
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: 7 and the tableCards[x] value is: S7
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: K and the tableCards[x] value is: SK
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 6 and the tableCards[x] value is: D6
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 2 and the tableCards[x] value is: D2
+DEBUG:root:the pairCount is: 0
+DEBUG:root:fourCheck tableCards list: ['SA', 'DJ', 'S7', 'SK', 'H9', 'S9', 'C3']
+DEBUG:root:flushDeck tableCards: ['SA', 'DJ', 'S7', 'SK', 'H9', 'S9', 'C3']
+DEBUG:root:This probably isn't a flush
+DEBUG:root:1
+DEBUG:root:1
+DEBUG:root:[['Club'], ['Diamond'], ['Spade', 'Spade', 'Spade', 'Spade'], ['Heart']]
+DEBUG:root:houseCheck tableCards:  ['SA', 'DJ', 'S7', 'SK', 'H9', 'S9', 'C3']
+DEBUG:root:threeCheck tablecards: ['A', 'J', '7', 'K', '9', '9', '3']
+DEBUG:root:pairCheck tableCards: ['SA', 'DJ', 'S7', 'SK', 'H9', 'S9', 'C3']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: A and the tableCards[x] value is: SA
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: J and the tableCards[x] value is: DJ
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: 7 and the tableCards[x] value is: S7
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: K and the tableCards[x] value is: SK
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:9 is equal to: 9
+DEBUG:root:PAIRCOUNTADDED to 1 on iteration x: 4 y: 5
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 9 and the tableCards[x] value is: S9
+DEBUG:root:9 is equal to: 9
+DEBUG:root:PAIRCOUNTADDED to 2 on iteration x: 5 y: 5
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 3 and the tableCards[x] value is: C3
+DEBUG:root:the pairCount is: 2
+DEBUG:root:PAIRCHECK RETURNED 1
+DEBUG:root:fourCheck tableCards list: ['C3', 'H2', 'SQ', 'D5', 'H9', 'D7', 'D4']
+DEBUG:root:Straight from 3 to 9
+DEBUG:root:Straight from 2 to 7
+DEBUG:root:flushDeck tableCards: ['C3', 'H2', 'SQ', 'D5', 'H9', 'D7', 'D4']
+DEBUG:root:This probably isn't a flush
+DEBUG:root:1
+DEBUG:root:3
+DEBUG:root:[['Club'], ['Diamond', 'Diamond', 'Diamond'], ['Spade'], ['Heart', 'Heart']]
+DEBUG:root:Straight from 3 to 9
+DEBUG:root:Straight from 2 to 7
+DEBUG:root:houseCheck tableCards:  ['C3', 'H2', 'SQ', 'D5', 'H9', 'D7', 'D4']
+DEBUG:root:threeCheck tablecards: ['3', '2', 'Q', '5', '9', '7', '4']
+DEBUG:root:pairCheck tableCards: ['C3', 'H2', 'SQ', 'D5', 'H9', 'D7', 'D4']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: 3 and the tableCards[x] value is: C3
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: 2 and the tableCards[x] value is: H2
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: Q and the tableCards[x] value is: SQ
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: 5 and the tableCards[x] value is: D5
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 7 and the tableCards[x] value is: D7
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 4 and the tableCards[x] value is: D4
+DEBUG:root:the pairCount is: 0
+DEBUG:root:pairCheck tableCards: ['C3', 'H2', 'SQ', 'D5', 'H9', 'D7', 'D4']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: 3 and the tableCards[x] value is: C3
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: 2 and the tableCards[x] value is: H2
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: Q and the tableCards[x] value is: SQ
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: 5 and the tableCards[x] value is: D5
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 7 and the tableCards[x] value is: D7
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 4 and the tableCards[x] value is: D4
+DEBUG:root:the pairCount is: 0
+DEBUG:root:fourCheck tableCards list: ['C3', 'H2', 'SQ', 'D5', 'H9', 'H7', 'D9']
+DEBUG:root:Straight from 3 to 9
+DEBUG:root:Straight from 2 to 7
+DEBUG:root:flushDeck tableCards: ['C3', 'H2', 'SQ', 'D5', 'H9', 'H7', 'D9']
+DEBUG:root:This probably isn't a flush
+DEBUG:root:1
+DEBUG:root:2
+DEBUG:root:[['Club'], ['Diamond', 'Diamond'], ['Spade'], ['Heart', 'Heart', 'Heart']]
+DEBUG:root:Straight from 3 to 9
+DEBUG:root:Straight from 2 to 7
+DEBUG:root:houseCheck tableCards:  ['C3', 'H2', 'SQ', 'D5', 'H9', 'H7', 'D9']
+DEBUG:root:threeCheck tablecards: ['3', '2', 'Q', '5', '9', '7', '9']
+DEBUG:root:pairCheck tableCards: ['C3', 'H2', 'SQ', 'D5', 'H9', 'H7', 'D9']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: 3 and the tableCards[x] value is: C3
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: 2 and the tableCards[x] value is: H2
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: Q and the tableCards[x] value is: SQ
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: 5 and the tableCards[x] value is: D5
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:9 is equal to: 9
+DEBUG:root:PAIRCOUNTADDED to 1 on iteration x: 4 y: 6
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 7 and the tableCards[x] value is: H7
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 9 and the tableCards[x] value is: D9
+DEBUG:root:9 is equal to: 9
+DEBUG:root:PAIRCOUNTADDED to 2 on iteration x: 6 y: 6
+DEBUG:root:the pairCount is: 2
+DEBUG:root:PAIRCHECK RETURNED 1
+DEBUG:root:fourCheck tableCards list: ['C3', 'H2', 'SQ', 'D5', 'H9', 'S6', 'S0']
+DEBUG:root:Straight from 3 to 9
+DEBUG:root:Straight from 2 to 6
+DEBUG:root:flushDeck tableCards: ['C3', 'H2', 'SQ', 'D5', 'H9', 'S6', 'S0']
+DEBUG:root:This probably isn't a flush
+DEBUG:root:1
+DEBUG:root:1
+DEBUG:root:[['Club'], ['Diamond'], ['Spade', 'Spade', 'Spade'], ['Heart', 'Heart']]
+DEBUG:root:Straight from 3 to 9
+DEBUG:root:Straight from 2 to 6
+DEBUG:root:houseCheck tableCards:  ['C3', 'H2', 'SQ', 'D5', 'H9', 'S6', 'S0']
+DEBUG:root:threeCheck tablecards: ['3', '2', 'Q', '5', '9', '6', '0']
+DEBUG:root:pairCheck tableCards: ['C3', 'H2', 'SQ', 'D5', 'H9', 'S6', 'S0']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: 3 and the tableCards[x] value is: C3
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: 2 and the tableCards[x] value is: H2
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: Q and the tableCards[x] value is: SQ
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: 5 and the tableCards[x] value is: D5
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 6 and the tableCards[x] value is: S6
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 0 and the tableCards[x] value is: S0
+DEBUG:root:the pairCount is: 0
+DEBUG:root:pairCheck tableCards: ['C3', 'H2', 'SQ', 'D5', 'H9', 'S6', 'S0']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: 3 and the tableCards[x] value is: C3
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: 2 and the tableCards[x] value is: H2
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: Q and the tableCards[x] value is: SQ
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: 5 and the tableCards[x] value is: D5
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 6 and the tableCards[x] value is: S6
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 0 and the tableCards[x] value is: S0
+DEBUG:root:the pairCount is: 0
+DEBUG:root:fourCheck tableCards list: ['C3', 'H2', 'SQ', 'D5', 'H9', 'D6', 'D0']
+DEBUG:root:Straight from 3 to 9
+DEBUG:root:Straight from 2 to 6
+DEBUG:root:flushDeck tableCards: ['C3', 'H2', 'SQ', 'D5', 'H9', 'D6', 'D0']
+DEBUG:root:This probably isn't a flush
+DEBUG:root:1
+DEBUG:root:3
+DEBUG:root:[['Club'], ['Diamond', 'Diamond', 'Diamond'], ['Spade'], ['Heart', 'Heart']]
+DEBUG:root:Straight from 3 to 9
+DEBUG:root:Straight from 2 to 6
+DEBUG:root:houseCheck tableCards:  ['C3', 'H2', 'SQ', 'D5', 'H9', 'D6', 'D0']
+DEBUG:root:threeCheck tablecards: ['3', '2', 'Q', '5', '9', '6', '0']
+DEBUG:root:pairCheck tableCards: ['C3', 'H2', 'SQ', 'D5', 'H9', 'D6', 'D0']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: 3 and the tableCards[x] value is: C3
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: 2 and the tableCards[x] value is: H2
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: Q and the tableCards[x] value is: SQ
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: 5 and the tableCards[x] value is: D5
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 6 and the tableCards[x] value is: D6
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 0 and the tableCards[x] value is: D0
+DEBUG:root:the pairCount is: 0
+DEBUG:root:pairCheck tableCards: ['C3', 'H2', 'SQ', 'D5', 'H9', 'D6', 'D0']
+DEBUG:root:**paircheck key value "x": 0 and the card num in question is: 3 and the tableCards[x] value is: C3
+DEBUG:root:**paircheck key value "x": 1 and the card num in question is: 2 and the tableCards[x] value is: H2
+DEBUG:root:**paircheck key value "x": 2 and the card num in question is: Q and the tableCards[x] value is: SQ
+DEBUG:root:**paircheck key value "x": 3 and the card num in question is: 5 and the tableCards[x] value is: D5
+DEBUG:root:**paircheck key value "x": 4 and the card num in question is: 9 and the tableCards[x] value is: H9
+DEBUG:root:**paircheck key value "x": 5 and the card num in question is: 6 and the tableCards[x] value is: D6
+DEBUG:root:**paircheck key value "x": 6 and the card num in question is: 0 and the tableCards[x] value is: D0
+DEBUG:root:the pairCount is: 0
+DEBUG:root:fourCheck tableCards list: ['H4', 'H9', 'HJ', 'CJ', 'SJ', 'SK', 'S4']
+DEBUG:root:Straight from 4 to 11
+DEBUG:root:Straight from 9 to 13
+DEBUG:root:flushDeck tableCards: ['H4', 'H9', 'HJ', 'CJ', 'SJ', 'SK', 'S4']
+DEBUG:root:This probably isn't a flush
+DEBUG:root:1
+DEBUG:root:0
+DEBUG:root:[['Club'], [], ['Spade', 'Spade', 'Spade'], ['Heart', 'Heart', 'Heart']]
+DEBUG:root:Straight from 4 to 11
+DEBUG:root:Straight from 9 to 13
+DEBUG:root:houseCheck tableCards:  ['H4', 'H9', 'HJ', 'CJ', 'SJ', 'SK', 'S4']
+DEBUG:root:threeCheck tablecards: ['4', '9', 'J', 'J', 'J', 'K', '4']
+DEBUG:root:fourCheck tableCards list: ['H4', 'H9', 'HJ', 'CJ', 'SJ', 'HA', 'D4']
+DEBUG:root:Straight from 4 to 11
+DEBUG:root:Straight from 9 to 14
+DEBUG:root:flushDeck tableCards: ['H4', 'H9', 'HJ', 'CJ', 'SJ', 'HA', 'D4']
+DEBUG:root:This probably isn't a flush
+DEBUG:root:1
+DEBUG:root:1
+DEBUG:root:[['Club'], ['Diamond'], ['Spade'], ['Heart', 'Heart', 'Heart', 'Heart']]
+DEBUG:root:Straight from 4 to 11
+DEBUG:root:Straight from 9 to 14
+DEBUG:root:houseCheck tableCards:  ['H4', 'H9', 'HJ', 'CJ', 'SJ', 'HA', 'D4']
+DEBUG:root:threeCheck tablecards: ['4', '9', 'J', 'J', 'J', 'A', '4']
+DEBUG:root:fourCheck tableCards list: ['H4', 'H9', 'HJ', 'CJ', 'SJ', 'D9', 'CQ']
+DEBUG:root:Straight from 4 to 11
+DEBUG:root:flushDeck tableCards: ['H4', 'H9', 'HJ', 'CJ', 'SJ', 'D9', 'CQ']
+DEBUG:root:This probably isn't a flush
+DEBUG:root:2
+DEBUG:root:1
+DEBUG:root:[['Club', 'Club'], ['Diamond'], ['Spade'], ['Heart', 'Heart', 'Heart']]
+DEBUG:root:Straight from 4 to 11
+DEBUG:root:houseCheck tableCards:  ['H4', 'H9', 'HJ', 'CJ', 'SJ', 'D9', 'CQ']
+DEBUG:root:threeCheck tablecards: ['4', '9', 'J', 'J', 'J', '9', 'Q']
+DEBUG:root:fourCheck tableCards list: ['H4', 'H9', 'HJ', 'CJ', 'SJ', 'H3', 'S0']
+DEBUG:root:Straight from 4 to 11
+DEBUG:root:flushDeck tableCards: ['H4', 'H9', 'HJ', 'CJ', 'SJ', 'H3', 'S0']
+DEBUG:root:This probably isn't a flush
+DEBUG:root:1
+DEBUG:root:0
+DEBUG:root:[['Club'], [], ['Spade', 'Spade'], ['Heart', 'Heart', 'Heart', 'Heart']]
+DEBUG:root:Straight from 4 to 11
+DEBUG:root:houseCheck tableCards:  ['H4', 'H9', 'HJ', 'CJ', 'SJ', 'H3', 'S0']
+DEBUG:root:threeCheck tablecards: ['4', '9', 'J', 'J', 'J', '3', '0']

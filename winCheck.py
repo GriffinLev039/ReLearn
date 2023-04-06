@@ -1,6 +1,7 @@
 import copy
 import logging
-logging.basicConfig(filename='pokerWin.log', encoding='utf-8', level=logging.INFO)
+logging.basicConfig(filename='pokerlog', filemode='w', level=logging.DEBUG)
+logging.getLogger()
 
 kicker = 0
 scoreList = [[],[],[],[]]
@@ -11,7 +12,7 @@ def flushCheck(card1, card2, tableList, playerNum):
     tableCards.append(card1)
     tableCards.append(card2)
     sorted(tableCards)
-    logging.info(f'flushDeck tableCards: {tableCards}')
+    logging.debug(f'flushDeck tableCards: {tableCards}')
     for i in range(len(tableCards)):
         if tableCards[i][0] == 'C':
             colorList[0].append('Club')
@@ -23,16 +24,16 @@ def flushCheck(card1, card2, tableList, playerNum):
             colorList[3].append('Heart')
 
     if len(colorList[0]) >= 5 or len(colorList[1]) >= 5 or len(colorList[2]) >= 5 or len(colorList[3]) >= 5:
-        logging.info("This is probably a flush")
-        logging.info(len(colorList[0]))
-        logging.info(len(colorList[1]))
-        logging.info(colorList)
+        logging.debug("This is probably a flush")
+        logging.debug(len(colorList[0]))
+        logging.debug(len(colorList[1]))
+        logging.debug(colorList)
         return True
     else:
-        logging.info("This probably isn't a flush")
-        logging.info(len(colorList[0]))
-        logging.info(len(colorList[1]))
-        logging.info(colorList)
+        logging.debug("This probably isn't a flush")
+        logging.debug(len(colorList[0]))
+        logging.debug(len(colorList[1]))
+        logging.debug(colorList)
 
 def pairCheck(card1, card2, tableList, playerNum):
     global kicker
@@ -43,31 +44,31 @@ def pairCheck(card1, card2, tableList, playerNum):
     tableCards.append(card1)
     tableCards.append(card2)
     sorted(tableCards)
-    logging.info(f'pairCheck tableCards: {tableCards}')
+    logging.debug(f'pairCheck tableCards: {tableCards}')
     for i in range(len(tableCards)):
         numList.append(tableCards[i][1])
     sorted(numList)
     for x in range(len(numList)):
-        logging.info(f'**paircheck key value "x": {x}', f'and the card num in question is: {numList[x]}', '\n', f'and the tableCards[x] value is: {tableCards[x]}')
+        logging.debug(f'**paircheck key value "x": {x} and the card num in question is: {numList[x]} and the tableCards[x] value is: {tableCards[x]}')
         z = 1
         for y in range(len(numList)):
-            logging.info(f'**paircheck key value "y": {y}' f'and the card num in question is: {numList[x]}', '\n', f'and the tableCards[y] value is: {tableCards[y]}')
+#            logging.debug(f'**paircheck key value "y": {y}' f'and the card num in question is: {numList[x]}', '\n', f'and the tableCards[y] value is: {tableCards[y]}')
             if numList[x] == numList[y]:
                 if z != 1:
                     pairCount += 1
-                    logging.info(f'{numList[x]} is equal to: {numList[y]}')
-                    logging.info(f'PAIRCOUNTADDED to {pairCount} on iteration x: {x} y: {y}')
+                    logging.debug(f'{numList[x]} is equal to: {numList[y]}')
+                    logging.debug(f'PAIRCOUNTADDED to {pairCount} on iteration x: {x} y: {y}')
                     pairList.append(x)
                 z = 0
-    logging.info(f'the pairCount is: {pairCount}')
+    logging.debug(f'the pairCount is: {pairCount}')
     pairCount = pairCount / 2
     if pairCount == 1:
         kicker = max(tableCards)
-        logging.info('PAIRCHECK RETURNED 1')
+        logging.debug('PAIRCHECK RETURNED 1')
         return(1)
     elif  pairCount >= 2:
         kicker = max(tableCards)
-        logging.info('PAIRCHECK RETURNED 2')
+        logging.debug('PAIRCHECK RETURNED 2')
         return(2)
 
 def straightCheckv2(card1, card2, tableList, playerNum):
@@ -91,12 +92,12 @@ def straightCheckv2(card1, card2, tableList, playerNum):
             numList.append(14)
         else:
             numList.append(int(tableCards[i][1]))
-    print(f"straightCheck2 debug: numList = {numList}")
+#    print(f"straightCheck2 debug: numList = {numList}")
     sorted(numList)
 
     for b in range(2):
         if numList[0+b] < numList[4+b]:
-            logging.info(f"Straight from {numList[0 + b]} to {numList[4+b]}")
+            logging.debug(f"Straight from {numList[0 + b]} to {numList[4+b]}")
             numtrue = 0
             for o in range(4):
                 if numList[4 + b] - numList[4 + b - o] == 1:
@@ -112,12 +113,12 @@ def straightCheck(card1, card2, tableList, playerNum):
     tableCards.append(card1)
     tableCards.append(card2)
     sorted(tableCards)
-    logging.info(f'straightCheck tableCards: {tableCards}')
+    logging.debug(f'straightCheck tableCards: {tableCards}')
     for i in range(len(tableCards)):
-        logging.info(tableCards)
-        logging.info(f'i is: i')
-        logging.info(f'range(len(tablecards)) is equal to {range(len(tableCards))}')
-        logging.info(f'tableCards of i is: {tableCards[i]}')
+        logging.debug(tableCards)
+        logging.debug(f'i is: i')
+        logging.debug(f'range(len(tablecards)) is equal to {range(len(tableCards))}')
+        logging.debug(f'tableCards of i is: {tableCards[i]}')
 
         try: tableCards[i] = int(tableCards[i][1])
         except ValueError:
@@ -135,12 +136,13 @@ def straightCheck(card1, card2, tableList, playerNum):
             tableCards.pop(i)
             tableCards.insert(0, int(14))
     sorted(tableCards)
-    logging.info(f'tablecards list is: {tableCards}')
+    logging.debug(f'tablecards list is: {tableCards}')
     if int(tableCards[-1]) -1 == tableCards[6]:
-        logging.info("string will start here.")
+        return
+        logging.debug("string will start here.")
     for b in range(2):
         if tableCards[0+b] < tableCards[4+b]:
-            logging.info(f"Straight from {tableCards[0 + b]} to {tableCards[4+b]}")
+            logging.debug(f"Straight from {tableCards[0 + b]} to {tableCards[4+b]}")
             kicker = tableCards[4+b]
             return(True)
 
@@ -154,9 +156,9 @@ def threeCheck(card1, card2, tableList, playerNum):
     for i in range(len(tableCards)):
         numList.append(tableCards[i][1])
     sorted(numList)
-    logging.info(f'threeCheck tablecards: {numList}')
+    logging.debug(f'threeCheck tablecards: {numList}')
     for i in range(len(numList)):
-        print(f"threeCheck debug: i = {i}, tableCards[i] = {tableCards[i]}, tableCards.count(tableCards[i]) = {tableCards.count(tableCards[i])}")
+#        print(f"threeCheck debug: i = {i}, tableCards[i] = {tableCards[i]}, tableCards.count(tableCards[i]) = {tableCards.count(tableCards[i])}")
         if numList.count(numList[i]) == 3:
             kicker = max(tableCards)
             return True
@@ -173,7 +175,7 @@ def fourCheck(card1, card2, tableList, playerNum):
     for i in range(len(tableCards)):
         numList.append(tableCards[i][1])
     sorted(numList)
-    logging.info(f'fourCheck tableCards list: {tableCards}')
+    logging.debug(f'fourCheck tableCards list: {tableCards}')
     for i in range(len(numList)):
         if tableCards.count(numList[i]) == 4:
             kicker = max(numList)
@@ -189,7 +191,7 @@ def houseCheck(card1, card2, tableList, playerNum):
     for i in range(len(tableCards)):
         numList.append(tableCards[i][1])
     sorted(numList)
-    logging.info(f'houseCheck tableCards:  {tableCards}')
+    logging.debug(f'houseCheck tableCards:  {tableCards}')
     tempKick = max(numList)
     for i in range(len(numList)):
         if numList.count(i) == 3:
@@ -246,4 +248,4 @@ def winMain(card1, card2, tableCards, playerNum):
     return int(0)
 
 def kickerCheck():
-    logging.info('a')
+    logging.debug('a')

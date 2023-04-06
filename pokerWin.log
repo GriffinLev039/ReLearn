@@ -6188,3 +6188,161 @@ INFO:root:J is equal to: J
 INFO:root:PAIRCOUNTADDED to 2 on iteration x: 4 y: 4
 INFO:root:the pairCount is: 2
 INFO:root:PAIRCHECK RETURNED 1
+INFO:root:fourCheck tableCards list: ['SK', 'D2', 'SQ', 'DK', 'C6', 'SJ', 'H5']
+INFO:root:Straight from 2 to 11
+INFO:root:flushDeck tableCards: ['SK', 'D2', 'SQ', 'DK', 'C6', 'SJ', 'H5']
+INFO:root:This probably isn't a flush
+INFO:root:1
+INFO:root:2
+INFO:root:[['Club'], ['Diamond', 'Diamond'], ['Spade', 'Spade', 'Spade'], ['Heart']]
+INFO:root:Straight from 2 to 11
+INFO:root:houseCheck tableCards:  ['SK', 'D2', 'SQ', 'DK', 'C6', 'SJ', 'H5']
+INFO:root:threeCheck tablecards: ['K', '2', 'Q', 'K', '6', 'J', '5']
+INFO:root:pairCheck tableCards: ['SK', 'D2', 'SQ', 'DK', 'C6', 'SJ', 'H5']
+INFO:root:K is equal to: K
+INFO:root:PAIRCOUNTADDED to 1 on iteration x: 0 y: 3
+INFO:root:K is equal to: K
+INFO:root:PAIRCOUNTADDED to 2 on iteration x: 3 y: 3
+INFO:root:the pairCount is: 2
+INFO:root:PAIRCHECK RETURNED 1
+INFO:root:fourCheck tableCards list: ['SK', 'D2', 'SQ', 'DK', 'C6', 'S4', 'C9']
+INFO:root:Straight from 2 to 4
+INFO:root:flushDeck tableCards: ['SK', 'D2', 'SQ', 'DK', 'C6', 'S4', 'C9']
+INFO:root:This probably isn't a flush
+INFO:root:2
+INFO:root:2
+INFO:root:[['Club', 'Club'], ['Diamond', 'Diamond'], ['Spade', 'Spade', 'Spade'], []]
+INFO:root:Straight from 2 to 4
+INFO:root:houseCheck tableCards:  ['SK', 'D2', 'SQ', 'DK', 'C6', 'S4', 'C9']
+INFO:root:threeCheck tablecards: ['K', '2', 'Q', 'K', '6', '4', '9']
+INFO:root:pairCheck tableCards: ['SK', 'D2', 'SQ', 'DK', 'C6', 'S4', 'C9']
+INFO:root:K is equal to: K
+INFO:root:PAIRCOUNTADDED to 1 on iteration x: 0 y: 3
+INFO:root:K is equal to: K
+INFO:root:PAIRCOUNTADDED to 2 on iteration x: 3 y: 3
+INFO:root:the pairCount is: 2
+INFO:root:PAIRCHECK RETURNED 1
+INFO:root:fourCheck tableCards list: ['SK', 'D2', 'SQ', 'DK', 'C6', 'DJ', 'S5']
+INFO:root:Straight from 2 to 11
+INFO:root:flushDeck tableCards: ['SK', 'D2', 'SQ', 'DK', 'C6', 'DJ', 'S5']
+INFO:root:This probably isn't a flush
+INFO:root:1
+INFO:root:3
+INFO:root:[['Club'], ['Diamond', 'Diamond', 'Diamond'], ['Spade', 'Spade', 'Spade'], []]
+INFO:root:Straight from 2 to 11
+INFO:root:houseCheck tableCards:  ['SK', 'D2', 'SQ', 'DK', 'C6', 'DJ', 'S5']
+INFO:root:threeCheck tablecards: ['K', '2', 'Q', 'K', '6', 'J', '5']
+INFO:root:pairCheck tableCards: ['SK', 'D2', 'SQ', 'DK', 'C6', 'DJ', 'S5']
+INFO:root:K is equal to: K
+INFO:root:PAIRCOUNTADDED to 1 on iteration x: 0 y: 3
+INFO:root:K is equal to: K
+INFO:root:PAIRCOUNTADDED to 2 on iteration x: 3 y: 3
+INFO:root:the pairCount is: 2
+INFO:root:PAIRCHECK RETURNED 1
+INFO:root:fourCheck tableCards list: ['SK', 'D2', 'SQ', 'DK', 'C6', 'D7', 'D4']
+INFO:root:Straight from 2 to 7
+INFO:root:flushDeck tableCards: ['SK', 'D2', 'SQ', 'DK', 'C6', 'D7', 'D4']
+INFO:root:This probably isn't a flush
+INFO:root:1
+INFO:root:4
+INFO:root:[['Club'], ['Diamond', 'Diamond', 'Diamond', 'Diamond'], ['Spade', 'Spade'], []]
+INFO:root:Straight from 2 to 7
+INFO:root:houseCheck tableCards:  ['SK', 'D2', 'SQ', 'DK', 'C6', 'D7', 'D4']
+INFO:root:threeCheck tablecards: ['K', '2', 'Q', 'K', '6', '7', '4']
+INFO:root:pairCheck tableCards: ['SK', 'D2', 'SQ', 'DK', 'C6', 'D7', 'D4']
+INFO:root:K is equal to: K
+INFO:root:PAIRCOUNTADDED to 1 on iteration x: 0 y: 3
+INFO:root:K is equal to: K
+INFO:root:PAIRCOUNTADDED to 2 on iteration x: 3 y: 3
+INFO:root:the pairCount is: 2
+INFO:root:PAIRCHECK RETURNED 1
+INFO:root:fourCheck tableCards list: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'C0', 'S0']
+INFO:root:flushDeck tableCards: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'C0', 'S0']
+INFO:root:This probably isn't a flush
+INFO:root:2
+INFO:root:3
+INFO:root:[['Club', 'Club'], ['Diamond', 'Diamond', 'Diamond'], ['Spade', 'Spade'], []]
+INFO:root:houseCheck tableCards:  ['DQ', 'CQ', 'D9', 'SA', 'D4', 'C0', 'S0']
+INFO:root:threeCheck tablecards: ['Q', 'Q', '9', 'A', '4', '0', '0']
+INFO:root:pairCheck tableCards: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'C0', 'S0']
+INFO:root:Q is equal to: Q
+INFO:root:PAIRCOUNTADDED to 1 on iteration x: 0 y: 1
+INFO:root:Q is equal to: Q
+INFO:root:PAIRCOUNTADDED to 2 on iteration x: 1 y: 1
+INFO:root:0 is equal to: 0
+INFO:root:PAIRCOUNTADDED to 3 on iteration x: 5 y: 6
+INFO:root:0 is equal to: 0
+INFO:root:PAIRCOUNTADDED to 4 on iteration x: 6 y: 6
+INFO:root:the pairCount is: 4
+INFO:root:PAIRCHECK RETURNED 2
+INFO:root:pairCheck tableCards: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'C0', 'S0']
+INFO:root:Q is equal to: Q
+INFO:root:PAIRCOUNTADDED to 1 on iteration x: 0 y: 1
+INFO:root:Q is equal to: Q
+INFO:root:PAIRCOUNTADDED to 2 on iteration x: 1 y: 1
+INFO:root:0 is equal to: 0
+INFO:root:PAIRCOUNTADDED to 3 on iteration x: 5 y: 6
+INFO:root:0 is equal to: 0
+INFO:root:PAIRCOUNTADDED to 4 on iteration x: 6 y: 6
+INFO:root:the pairCount is: 4
+INFO:root:PAIRCHECK RETURNED 2
+INFO:root:fourCheck tableCards list: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'S2', 'D2']
+INFO:root:flushDeck tableCards: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'S2', 'D2']
+INFO:root:This probably isn't a flush
+INFO:root:1
+INFO:root:4
+INFO:root:[['Club'], ['Diamond', 'Diamond', 'Diamond', 'Diamond'], ['Spade', 'Spade'], []]
+INFO:root:houseCheck tableCards:  ['DQ', 'CQ', 'D9', 'SA', 'D4', 'S2', 'D2']
+INFO:root:threeCheck tablecards: ['Q', 'Q', '9', 'A', '4', '2', '2']
+INFO:root:pairCheck tableCards: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'S2', 'D2']
+INFO:root:Q is equal to: Q
+INFO:root:PAIRCOUNTADDED to 1 on iteration x: 0 y: 1
+INFO:root:Q is equal to: Q
+INFO:root:PAIRCOUNTADDED to 2 on iteration x: 1 y: 1
+INFO:root:2 is equal to: 2
+INFO:root:PAIRCOUNTADDED to 3 on iteration x: 5 y: 6
+INFO:root:2 is equal to: 2
+INFO:root:PAIRCOUNTADDED to 4 on iteration x: 6 y: 6
+INFO:root:the pairCount is: 4
+INFO:root:PAIRCHECK RETURNED 2
+INFO:root:pairCheck tableCards: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'S2', 'D2']
+INFO:root:Q is equal to: Q
+INFO:root:PAIRCOUNTADDED to 1 on iteration x: 0 y: 1
+INFO:root:Q is equal to: Q
+INFO:root:PAIRCOUNTADDED to 2 on iteration x: 1 y: 1
+INFO:root:2 is equal to: 2
+INFO:root:PAIRCOUNTADDED to 3 on iteration x: 5 y: 6
+INFO:root:2 is equal to: 2
+INFO:root:PAIRCOUNTADDED to 4 on iteration x: 6 y: 6
+INFO:root:the pairCount is: 4
+INFO:root:PAIRCHECK RETURNED 2
+INFO:root:fourCheck tableCards list: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'D7', 'H3']
+INFO:root:flushDeck tableCards: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'D7', 'H3']
+INFO:root:This probably isn't a flush
+INFO:root:1
+INFO:root:4
+INFO:root:[['Club'], ['Diamond', 'Diamond', 'Diamond', 'Diamond'], ['Spade'], ['Heart']]
+INFO:root:houseCheck tableCards:  ['DQ', 'CQ', 'D9', 'SA', 'D4', 'D7', 'H3']
+INFO:root:threeCheck tablecards: ['Q', 'Q', '9', 'A', '4', '7', '3']
+INFO:root:pairCheck tableCards: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'D7', 'H3']
+INFO:root:Q is equal to: Q
+INFO:root:PAIRCOUNTADDED to 1 on iteration x: 0 y: 1
+INFO:root:Q is equal to: Q
+INFO:root:PAIRCOUNTADDED to 2 on iteration x: 1 y: 1
+INFO:root:the pairCount is: 2
+INFO:root:PAIRCHECK RETURNED 1
+INFO:root:fourCheck tableCards list: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'D3', 'S8']
+INFO:root:flushDeck tableCards: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'D3', 'S8']
+INFO:root:This probably isn't a flush
+INFO:root:1
+INFO:root:4
+INFO:root:[['Club'], ['Diamond', 'Diamond', 'Diamond', 'Diamond'], ['Spade', 'Spade'], []]
+INFO:root:houseCheck tableCards:  ['DQ', 'CQ', 'D9', 'SA', 'D4', 'D3', 'S8']
+INFO:root:threeCheck tablecards: ['Q', 'Q', '9', 'A', '4', '3', '8']
+INFO:root:pairCheck tableCards: ['DQ', 'CQ', 'D9', 'SA', 'D4', 'D3', 'S8']
+INFO:root:Q is equal to: Q
+INFO:root:PAIRCOUNTADDED to 1 on iteration x: 0 y: 1
+INFO:root:Q is equal to: Q
+INFO:root:PAIRCOUNTADDED to 2 on iteration x: 1 y: 1
+INFO:root:the pairCount is: 2
+INFO:root:PAIRCHECK RETURNED 1
