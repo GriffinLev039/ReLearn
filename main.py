@@ -1,7 +1,29 @@
 import random
 import winCheck
 import logging
-logging.basicConfig(filename='pokerMain.log', encoding='utf-8', level=logging.DEBUG)
+import time
+import logging.handlers
+
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+info_handler = logging.FileHandler('pokerINFO.log', mode='w')
+
+info_handler.setLevel(logging.INFO)
+info_formatter = logging.Formatter("%(levelname)s:%(name)s:%(message)s")
+info_handler.setFormatter(info_formatter)
+logger.addHandler(info_handler)
+
+debug_handler = logging.FileHandler('pokerDEBUG.log', mode='w')
+debug_handler.setLevel(logging.DEBUG)
+debug_formatter = logging.Formatter("%(levelname)s:%(name)s:%(message)s")
+debug_handler.setFormatter(debug_formatter)
+logger.addHandler(debug_handler)
+
+logger.info('****')
+logger.info('****')
+logger.info("NEW INSTANCE")
+logger.info('****')
+logger.info('****')
 
 playerScore = []
 cardDeck = []
@@ -86,7 +108,6 @@ def cardDeal(var1):
 #
 #
 def dealerFunc(o):
-    print("temp")
     global tableList
     for i in range(o):
         c = len(cardDeck) - 1
@@ -99,6 +120,7 @@ def dealerFunc(o):
 #
 #
 def playerTurn(playerNum):
+    temp = 0
     global potTotal
     global potTop
     print("Your cards are: ", playerHands[playerNum][0], 'and', playerHands[playerNum][1])
@@ -107,25 +129,21 @@ def playerTurn(playerNum):
         return
     while True:
         if potTop == 0:
-            player = input("What do you want to do? 1 for fold, 2 for check or 3 for bet:")
+            player = int(input("What do you want to do? 1 for fold, 2 for check or 3 for bet:"))
             if player == 4:
-                player = 3
+                player = 5
         else:
-            player = input("What do you want to do? 1 for fold, 2 for call, or 3 for raise:")
+            player = int(input("What do you want to do? 1 for fold, 2 for call, or 3 for raise:"))
+            temp = 1
             if player == 3:
                 player = 4
-
-
         try:
-            player = int(player)
-            if player != 1 and player != 2 and player != 3 and player !=4:
-                raise ValueError
+
             if player == 4:
                 decision = 'raise.'
                 while True:
                     raiseNum = input('How much do you want to raise to?')
                     print("The current top bet is", potTop, 'chips.')
-
                     try:
                         raiseNum = int(raiseNum)
                         if raiseNum > playerWallets[playerNum]:
@@ -163,7 +181,10 @@ def playerTurn(playerNum):
                         print("Please enter a valid numerical value only. Remember, you have", playerWallets[playerNum], 'chips.')
 
             elif player == 2:
-                decision = 'check.'
+                if temp != 1:
+                    decision = 'check.'
+                else:
+                    decision = 'call.'
                 while True:
                     if potTop == 0:
                         break
@@ -183,6 +204,8 @@ def playerTurn(playerNum):
                 for i in range(2):
                     burnList.append(playerHands[playerNum])
                     playerHands[playerNum].pop(i - 1)
+
+
             print('You have chosen to', decision)
             break
 
@@ -190,8 +213,22 @@ def playerTurn(playerNum):
             print("Please only enter 1, 2, 3, or 4")
 
 
-
-
+def chipSort(scoreList, pot, wallets):
+    winnerList = []
+    for a in range(len(playerScore)):
+        k = 0
+        for b in range(len(playerScore)):
+            if playerScore[a] == playerScore[b]:
+                if k == 1:
+                    winnerList.append(a)
+                k = 1
+    pot = pot/(len(winnerList)/2)
+    for c in range(len(winnerList)):
+        wallets[winnerList[a]] = wallets[winnerList[a]] + pot
+        print(f'player {a} has won and now has {wallets[a]} chips!')
+    print(f'winnerlist is: {winnerList}')
+    print(f'wallets is: {wallets}')
+    return wallets
 
 playerCount = userInput()
 #playerHands = cardDeal(playerCount)
@@ -203,28 +240,40 @@ print(playerWallets)
 doPlay = 1
 
 while doPlay == 1:
+    logger.info('****')
+    logger.info("NEW ROUND")
+    logger.info('****')
     playerHands = cardDeal(playerCount)
     for i in range(playerCount):
         playerTurn(i)
     dealerFunc(3)
     print(tableList)
+    potTotal = potTotal + potTop
+    potTop = 0
 
     for i in range(playerCount):
         playerTurn(i)
     dealerFunc(1)
     print(tableList)
+    potTotal = potTotal + potTop
+    potTop = 0
 
     for i in range(playerCount):
         playerTurn(i)
     dealerFunc(1)
     print(tableList)
+    potTotal = potTotal + potTop
+    potTop = 0
 
     for i in range(playerCount):
         playerTurn(i)
 
     for i in range(playerCount):
-        playerScore.append(winCheck.winMain(playerHands[i][0],playerHands[i][1],tableList,i))
-        print('playerScore is: ', playerScore)
+        if len(playerHands[i]) == 0:
+            playerScore.append(0)
+        else:
+            playerScore.append(winCheck.winMain(playerHands[i][0],playerHands[i][1],tableList,i))
+    print('playerScore is: ', playerScore)
     # for a in range(len(playerScore)):
     #     if set(playerScore[a]) >= 1:
     #         print('checking for kicker card, since there is a tie...')
@@ -232,8 +281,18 @@ while doPlay == 1:
     #         winCheck.kickerCheck()
     print("The playerHands are: ", playerHands)
     print("The table cards are: ", tableList)
-    print("the winner is, Player", int(playerScore.index(max(playerScore))) + 1)
-    # doPlay = int(input("Do you want to play again? 1 for yes, 0 for no: "))
+    chipSort(playerScore, potTotal, playerWallets)
+    # print("the winner is, Player", int(playerScore.index(max(playerScore))) + 1)
+    for b in range(playerCount):
+        logging.debug(f'Player {b + 1} now has {chipCount[b]} chips.')
+        if chipCount == 0:
+            print(f'Player {b + 1} has lost.')
+
+    logger.info(f'playerScore is:  {playerScore}')
+    logger.info(f'the playerHands are: {playerHands}')
+    logger.info(f'The table cards are: {tableList}')
+    logger.info(f'The winner is, Player: {int(playerScore.index(max(playerScore))) + 1}')
+    doPlay = int(input("Do you want to play again? 1 for yes, 0 for no: "))
     if doPlay == 0:
         break
     else:
@@ -255,3 +314,4 @@ while doPlay == 1:
                 z = cardSuits[y] + cardNums[x]
                 cardDeck.append(z)
                 y = y + 1
+    time.sleep(.001)
